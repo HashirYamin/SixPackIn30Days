@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/beginner_card"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardviewbg"
+            >
+            <View
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:background="@drawable/thunderboltblue"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/thunderboltlight"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+
+                />
+            <View
+                android:id="@+id/lightthundericonleft"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:background="@drawable/thunderboltlight"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beginner"
+                android:fontFamily="@font/outfitbold"
+                android:textSize="@dimen/_11ssp"
+                android:layout_toRightOf="@id/lightthundericonleft"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/question2"
+                />
+            <TextView
+                android:id="@+id/losebellyfattext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lose Belly Fat"
+                android:fontFamily="@font/outfitbold"
+                android:textSize="@dimen/_16ssp"
+                android:layout_below="@+id/lightthundericonleft"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:id="@+id/noofdays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:fontFamily="@font/outfitbold"
+                android:textSize="@dimen/_17ssp"
+                android:layout_below="@+id/losebellyfattext"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/blue_light"
+                android:layout_marginLeft="@dimen/_17sdp"
+                />
+            <TextView
+                android:id="@+id/dayslefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="days left"
+                android:fontFamily="@font/outfitbold"
+                android:textSize="@dimen/_12ssp"
+                android:layout_below="@+id/losebellyfattext"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/noofdays"
+                android:layout_marginLeft="@dimen/_2sdp"
+                />
+            <ProgressBar
+                android:id="@+id/alphabet_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_below="@+id/losebellyfattext"
+                android:progressDrawable="@drawable/progress_bar_bg"
+                android:layout_marginTop="@dimen/_37sdp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:id="@+id/current_beginner"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/oval_shape"
+        android:layout_below="@id/beginner_card"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:id="@+id/inter"
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/baseline_circle_24"
+        android:layout_below="@id/beginner_card"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_toRightOf="@+id/current_beginner"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/baseline_circle_24"
+        android:layout_below="@id/beginner_card"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_toRightOf="@+id/inter"
+        android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_500sdp"
+        android:layout_below="@+id/inter"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        >
+        <LinearLayout
+            android:id="@+id/container_beginner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beginner_card"
+            android:orientation="vertical"
+
+            android:gravity="center_horizontal"
+            android:divider="@drawable/divider_drawable"
+            android:showDividers="middle"
+
+            >
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

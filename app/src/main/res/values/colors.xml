@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#3F51B5</color> <!-- Adjust the hex color value as needed -->
+    <color name="blue_light">#0F56C1</color>
+    <color name="light_card_bg_color">#E0E4EC</color>
+    <color name="light_bg_color">#EAECF1</color>
+    <color name="lightGreen">#FFFFFF</color>
+    <!-- colors.xml -->
+    <color name="primary_dark_default">#E5E8EF</color>
+    <color name="primary_dark_scrolled">#FFFFFF</color>
+    <color name="blue_gym_app_resource">#014BF2 </color>
+</resources>

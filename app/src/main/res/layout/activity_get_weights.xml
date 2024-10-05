@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Label for weight -->
+    <TextView
+        android:id="@+id/tvWeightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <!-- RadioGroup for kg/lb toggle -->
+    <RadioGroup
+        android:id="@+id/radioGroupUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:checked="true"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rbLb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lb"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <!-- Display current weight -->
+    <TextView
+        android:id="@+id/tvCurrentWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75.0 kg"
+        android:textSize="36sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <!-- SeekBar for smooth weight selection -->
+    <SeekBar
+        android:id="@+id/weightSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="20" />
+
+</LinearLayout>

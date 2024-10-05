@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <scale
+            android:drawable="@drawable/baseline_check_24"
+            android:scaleGravity="center"
+            android:scaleWidth="0.5"
+            android:scaleHeight="0.5" />
+    </item>
+</layer-list>

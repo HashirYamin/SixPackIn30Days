@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/ex_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/outfitmedium"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/gif"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textStyle="bold"
+        android:layout_below="@id/ex_name"
+        android:fontFamily="@font/outfitmedium"
+        android:layout_toRightOf="@id/gif"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:letterSpacing="0.05"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/training_bottom"
+        android:title="Training"
+        android:icon="@drawable/baseline_fitness_center_24"
+        />
+
+    <item
+        android:id="@+id/report_bottom"
+        android:title="Reports"
+        android:icon="@drawable/baseline_bar_chart_24"
+        />
+
+    <item
+        android:id="@+id/user_bottom"
+        android:title="Me"
+        android:icon="@drawable/round_person_24"
+        />
+
+
+
+</menu>
